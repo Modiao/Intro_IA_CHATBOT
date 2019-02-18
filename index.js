@@ -52,9 +52,9 @@ var api_key_weather = "xxxx";
 // ----------------------- PARAMETRES DU SERVEUR -------------------------
 const PORT = process.env.PORT || 5000;
 // Wit.ai parameters
-const WIT_TOKEN = "BW7UWECEEWZCWLHHAHXFI3M6BZZPB6AF";   // saisir ici vos informations (infos sur session XX),carbonesoft
+const WIT_TOKEN = "xxx";   // saisir ici vos informations (infos sur session XX),carbonesoft
 // Messenger API parameters
-const FB_PAGE_TOKEN = "EAAgnEbSNQUwBAF19iFepxtXdvr4AIFHGvHAUbidqnCMEPZCgsLPt8eeHaSYm5fiVMlmAlucSNKZB8kOLynLwT0zYix9xzfnwqLoYVsMEqXZCLex20xqzEUZB8oxDLDZAcB1Yp2xuw2Y5JpDehKQf6a28NdluGELXx6L4LP29wldqaCM7ZCGRve"; // saisir ici vos informations (infos sur session XX)
+const FB_PAGE_TOKEN = "xxx"; // saisir ici vos informations (infos sur session XX)
 if ( !FB_PAGE_TOKEN ) {
   throw new Error( 'missing FB_PAGE_TOKEN' )
 }
@@ -62,7 +62,7 @@ const FB_APP_SECRET = "4eecc1981425572d1ad443f1de11e868"; // saisir ici vos info
 if ( !FB_APP_SECRET ) {
   throw new Error( 'missing FB_APP_SECRET' )
 }
-let FB_VERIFY_TOKEN = "CarbonesoftIcloudrassouldev12";   // saisir ici vos informations (infos sur session XX),carbonesoft
+let FB_VERIFY_TOKEN = "xxx";   // saisir ici vos informations (infos sur session XX),carbonesoft
 crypto.randomBytes( 8, ( err, buff ) => {
   if ( err ) throw err;
   FB_VERIFY_TOKEN = buff.toString( 'hex' );
