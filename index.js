@@ -300,7 +300,7 @@ actions.envoyer_message_text( sessionId, context, entities, 'je suis désolé de
   // IL Y A UNE INTENTION DETECTION : DECOUVRONS LAQUELLE AVEC UN SWITCH
   else {
     switch ( entities.intent && entities.intent[ 0 ].value ) {
-      case "Dire_Bonjour":
+      case "Dire_Bonjour Ca va":
             actions.reset_context( entities, context, sessionId ).then(function() {
             actions.getUserName( sessionId, context, entities).then( function() {
             actions.envoyer_message_text( sessionId, context, entities, 'Bonjour 🤗 ' +context.userName);
